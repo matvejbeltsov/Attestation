@@ -20,6 +20,14 @@ namespace Attestation
 
         }
 
+        public static void print_array(string[] array){
+            Console.Write("[");
+             for (int i = 0; i < array.Length - 1; i++){
+                Console.Write($"\"{array[i]}\", ");
+            }
+            Console.Write($"\"{array[array.Length - 1]}\"]");
+        }
+
         
         
        
@@ -28,10 +36,7 @@ namespace Attestation
             Console.Write("Укажите длинну массива: ");
             int length_of_array = Convert.ToInt32(Console.ReadLine());
             string[] array = inizialisation_array(length_of_array);
-
-            for (int i = 0; i < array.Length; i++){
-                Console.Write(array[i] + " ");
-            }
+            print_array(array);
         }
     }
 }
