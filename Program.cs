@@ -28,7 +28,7 @@ namespace Attestation
             Console.Write($"\"{array[array.Length - 1]}\"]");
         }
 
-        public static string[] solving_the_problem(string[] array){
+        public static string[] solving_the_task(string[] array){
             int count = 0;
             for (int i = 0; i < array.Length; i++){
                 if(array[i].Length <= 3){
@@ -56,7 +56,7 @@ namespace Attestation
             string[] array = inizialisation_array(length_of_array);
             Console.WriteLine("Изначальный массив: ");
             print_array(array);
-            string[] new_array = solving_the_problem(array);
+            string[] new_array = solving_the_task(array);
             Console.WriteLine("\nРезультат выполнения программы: ");
             print_array(new_array);
         }
